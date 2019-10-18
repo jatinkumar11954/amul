@@ -30,10 +30,7 @@ class _HomeScreenState extends State<HomeScreen>
               child: new Text("NO"),
               onPressed: () {
                 // Navigator.of(context).pop();
-                Navigator.push(
-              ctxt,
-              new MaterialPageRoute(builder: (ctxt) => new HomeScreen()),
-            );
+                Navigator.pushNamed(ctxt,'HomeScreen');
               },
             ),
             new FlatButton(
