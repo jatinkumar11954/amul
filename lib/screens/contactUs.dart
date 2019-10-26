@@ -55,7 +55,7 @@ class _ContactUsState extends State<ContactUs> {
            Padding(
              padding: EdgeInsets.only(left: SizeConfig.blockSizeVertical*2.5,right:SizeConfig.blockSizeVertical*1.5 ),
            child: new FlatButton(
-             onPressed: () => launch("tel:919010590693"),
+             onPressed: () => launch("tel:\+919010590693"),
               child: new Text("call me"),
               color: Colors.orange,
               ),

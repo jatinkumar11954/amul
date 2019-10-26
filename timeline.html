@@ -1,0 +1,127 @@
+
+--------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.dropbtn {
+  background-color: transparent;
+  color: black;
+ padding-top:8px;
+  padding-bottom:5px;
+  padding-left:25px;
+  padding-right:25px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Route
+  <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+    <a id="b1" >Route No.1</a>
+    <a id="b2">Route No.2</a>
+    <a id="b3" >Route No.3</a>
+    <a id="b4" >Route No.4</a>
+    <a id="b5" >Route No.5</a>
+    <a id="b6" >Route No.6</a>
+    <a id="b7" >Route No.7</a>
+    <a id="b8" >Route No.8</a>
+    <a id="b9" >Route No.9</a>
+    <a id="b10" >Route No.10</a>
+    <a id="b11" >Route No.11</a>
+    <a id="b12" >Route No.12</a>
+  </div>
+</div>
+<div class="elementor-image">
+  <img width="255" height="852" src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route1.jpg"><!-- <img id="i1" src="route1.jpg" width="200" height="200"class="attachment-large size-large" alt="" srcset="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route1.jpg 255w, https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route1-90x300.jpg 90w" sizes="(max-width: 255px) 100vw, 255px>
+  </img> -->
+  </div>
+	<script>
+		
+			document.getElementById("b1").addEventListener('click',function(){
+        document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route1.jpg";
+        // document.querySelector('.elementor-image img').srcset="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route1.jpg 255w, https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route1-90x300.jpg 90w";
+        });
+			document.getElementById("b2").addEventListener('click',function(){
+        document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route2.jpg";
+        // document.querySelector('.elementor-image img').srcset="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route2.jpg 255w, https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route2-90x300.jpg 90w";
+});
+				
+			document.getElementById("b3").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').srcsetset="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route3.jpg";
+        // document.querySelector('.elementor-image img').srcset="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route3.jpg 255w, https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route3-90x300.jpg 90w";
+});
+				
+				
+			document.getElementById("b4").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route4.jpg";
+        // document.querySelector('.elementor-image img').srcset="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route4.jpg 255w, https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route4-90x300.jpg 90w";
+});
+				
+			document.getElementById("b5").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route5.jpg";
+        // document.querySelector('.elementor-image img').srcset="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route5.jpg 255w, https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route5-90x300.jpg 90w";
+});
+				
+			document.getElementById("b6").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route6.jpg";});
+				
+			document.getElementById("b7").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route7.jpg";});
+
+			document.getElementById("b8").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route8.jpg";});
+				
+			document.getElementById("b9").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route9.jpg";});
+				
+			document.getElementById("b10").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route10.jpg";});
+				
+			document.getElementById("b11").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route11.jpg";});
+				
+			document.getElementById("b12").addEventListener('click',function(){
+				document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route12.jpg";});
+				
+			
+		
+	</script>
+</body>
+</html>
+<script>	document.getElementById("b5").addEventListener('load',function(){
+  document.querySelector('.elementor-image img').src="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route5.jpg";
+  document.querySelector('.elementor-image img').srcset="https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route5.jpg 255w, https://usoneinfotech.com/wp/wp-content/uploads/2019/10/route5-90x300.jpg 90w";
+});</script>
