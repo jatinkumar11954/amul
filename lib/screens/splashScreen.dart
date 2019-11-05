@@ -32,19 +32,19 @@ class _SplashState extends State<Splash> {
       fit: StackFit.expand,
         children: <Widget>[
             new SplashScreen(
-                seconds: 4,
-                backgroundColor: Colors.lime,
+                seconds: 2,
+                backgroundColor: Colors.blue[800],
                 image: Image.asset('images/logo.png'),
                 photoSize:  SizeConfig.blockSizeVertical*30.0,
-                title: Text("Welcome to ConversionGuru",style:TextStyle(fontSize: SizeConfig.blockSizeVertical *3.0,color:Colors.deepOrange),),
-                loaderColor: Colors.green,
+                title: Text("Welcome to app",style:TextStyle(fontSize: SizeConfig.blockSizeVertical *3.0,color:Colors.white),),
+                loaderColor: Colors.white,
                 navigateAfterSeconds: new SelectScreen(),
               ),
           new Column(
             mainAxisAlignment: MainAxisAlignment.end,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Text('Powered By ConversionGuru', style: TextStyle(decorationColor:Colors.green,fontSize: SizeConfig.blockSizeVertical * 2.5,backgroundColor:Colors.white)),
+           //   Text('Powered By ConversionGuru', style: TextStyle(decorationColor:Colors.green,fontSize: SizeConfig.blockSizeVertical * 2.5,backgroundColor:Colors.white)),
               Padding(
                 padding: EdgeInsets.only(bottom: 30.0),
                 // child: new Image.asset(

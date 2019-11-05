@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen>
     return new Scaffold(
       appBar: new AppBar(
         backgroundColor: Color(0XFF00099a9),
-        title: new Text('CONVERSIONGURU DEMO APP'),
+        title: new Text('APP'),
       ),
       body:WillPopScope(
       onWillPop:()
@@ -63,20 +63,20 @@ class _HomeScreenState extends State<HomeScreen>
 
            ShowImage("logo"),
            Text("About",style: TextStyle(fontSize:SizeConfig.blockSizeVertical * 2.5),),
-            InkWell(
-                    child: new Text('About ConversionGuru',style:TextStyle(fontSize: 20.0,color: Colors.red, decoration: TextDecoration.underline)),
-                onTap: () async {
-            if (await canLaunch("https://www.conversionguru.in/")) {
-              await launch("https://www.conversionguru.in/");
-            }
-                }
+            // InkWell(
+            //         child: new Text('About ConversionGuru',style:TextStyle(fontSize: 20.0,color: Colors.red, decoration: TextDecoration.underline)),
+            //     onTap: () async {
+            // if (await canLaunch("https://www.conversionguru.in/")) {
+            //   await launch("https://www.conversionguru.in/");
+            // }
+            //     }
                 
-                // launch("https://in.linkedin.com/in/jaya-prakash-veldanda-756b48179"),
-              ),
+            //     // launch("https://in.linkedin.com/in/jaya-prakash-veldanda-756b48179"),
+            //   ),
             Text("\n\n"),
                RaisedButton(
-              color: Colors.orange,
-            child: Text("Exit"),
+              color: Colors.blue,
+            child: Text("Exit",style: new TextStyle( color: Colors.white),),
             onPressed: ()
             {
               show();
@@ -88,8 +88,8 @@ class _HomeScreenState extends State<HomeScreen>
           Padding(
              padding: EdgeInsets.only(left: SizeConfig.blockSizeVertical*1.5,right:SizeConfig.blockSizeVertical*1.5 ),
          child: RaisedButton(
-              color: Colors.green,
-            child: Text("Data testing"),
+              color: Colors.blue,
+            child: Text("Data testing",style: new TextStyle( color: Colors.white),),
             onPressed: ()
             {
               Navigator.pushNamed(context,'CheckData');
@@ -100,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen>
 
           RaisedButton(
               color: Colors.blue,
-            child: Text("Contact Form"),
+            child: Text("Contact Form",style: new TextStyle( color: Colors.white),),
             onPressed: ()
             {
               Navigator.pushNamed(context,'ContactForm');
@@ -112,8 +112,8 @@ class _HomeScreenState extends State<HomeScreen>
         Padding(
              padding: EdgeInsets.only(left: SizeConfig.blockSizeVertical*2.5,right:SizeConfig.blockSizeVertical*1.5 ),
          child: RaisedButton(
-              color: Colors.pink,
-            child: Text("Contact US"),
+              color: Colors.blue,
+            child: Text("Contact US",style: new TextStyle( color: Colors.white),),
             onPressed: ()
             {
               Navigator.pushNamed(context,'ContactUs');
@@ -124,8 +124,8 @@ class _HomeScreenState extends State<HomeScreen>
         Padding(
              padding: EdgeInsets.only(left: SizeConfig.blockSizeVertical*2.5,right:SizeConfig.blockSizeVertical*1.5 ),
          child: RaisedButton(
-              color: Colors.orange,
-            child: Text("Select Screen"),
+              color: Colors.blue,
+            child: Text("Select Screen",style: new TextStyle( color: Colors.white),),
             onPressed: ()
             {
               Navigator.pushNamed(context,'ScreenSelection');
@@ -137,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen>
              padding: EdgeInsets.only(left: SizeConfig.blockSizeVertical*2.5,right:SizeConfig.blockSizeVertical*1.5 ),
          child: RaisedButton(
               color: Colors.blue,
-            child: Text("BottomNavigation"),
+            child: Text("BottomNavigation",style: new TextStyle( color: Colors.white),),
             onPressed: ()
             {
               Navigator.pushNamed(context,'BottomNavigation');

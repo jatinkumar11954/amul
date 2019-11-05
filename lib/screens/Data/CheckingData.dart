@@ -23,7 +23,7 @@ class _CheckData extends State<CheckData>{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text("ConversionGuru Demo App"),),
+        appBar: AppBar(title: Text("App"),),
         body:WillPopScope(
           onWillPop: (){
             //write smtg jatin

@@ -15,7 +15,7 @@ class _SelectScreenState extends State<SelectScreen> {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Scaffold(
-      backgroundColor: Colors.orangeAccent,
+      backgroundColor: Colors.blue[900],
       body:Stack(
       fit: StackFit.expand,
         children: <Widget>[
@@ -25,15 +25,15 @@ class _SelectScreenState extends State<SelectScreen> {
           InkWell(
               onTap: () =>Navigator.pushNamed(context, 'SignIn'),//write function jp
               child: new Container( 
-                //width: 100.0,
+                width: 200.0,
                 height: 50.0,
                 decoration: new BoxDecoration(
-                  color: Colors.lime,
-                  border: new Border.all(color: Colors.green, width: 5.0),
+                  color: Colors.grey[900],
+                  border: new Border.all(color: Colors.grey, width: 5.0),
                   borderRadius: new BorderRadius.circular(10.0),
                 ),
 
-                child: new Center(child: new Text('Sign in', style: new TextStyle(fontSize: SizeConfig.blockSizeVertical *3, color: Colors.black),),),
+                child: new Center(child: new Text('Sign in', style: new TextStyle(fontSize: SizeConfig.blockSizeVertical *3, color: Colors.white),),),
               ),
             ),
             Text("\n"),
@@ -43,15 +43,15 @@ class _SelectScreenState extends State<SelectScreen> {
                 Navigator.pushNamed(context,'Register'),
               },//write function jp
               child: new Container( 
-                //width: 100.0,
+                width: 200.0,
                
                 height: 50.0,
                 decoration: new BoxDecoration(
-                  color: Colors.lime,
-                  border: new Border.all(color: Colors.green, width: 5.0),
+                  color: Colors.grey[900],
+                  border: new Border.all(color: Colors.grey, width: 5.0),
                   borderRadius: new BorderRadius.circular(10.0),
                 ),
-                child: new Center(child: new Text('Register', style: new TextStyle(fontSize: SizeConfig.blockSizeVertical *3, color: Colors.black),),),
+                child: new Center(child: new Text('Register', style: new TextStyle(fontSize: SizeConfig.blockSizeVertical *3, color: Colors.white),),),
               ),
             ),
           ],
